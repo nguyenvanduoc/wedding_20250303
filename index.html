@@ -11,9 +11,12 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Văn Được &amp; Ngọc Bích Wedding site!">
     <meta property="og:url" content="https://duocbich.iwedding.info">
-    <meta property="og:description" content="Văn Được &amp;Ngọc Bích - Our wedding date: 2025-03-29 | Một cuộc hôn nhân hoàn hảo chỉ là hai người không hoàn hảo không chịu từ bỏ nhau">
+    <meta property="og:description" content="Văn Được &amp; Ngọc Bích - Our wedding date: 2025-03-29 | Một cuộc hôn nhân hoàn hảo chỉ là hai người không hoàn hảo không chịu từ bỏ nhau">
     <meta property="og:image" content="https://cdn.biihappy.com/ziiweb/website/67c067d7e73fa8fd110f5a20/d1569110caff062a60b7c702b09772f7.jpeg">
     <meta property="og:image:url" content="https://cdn.biihappy.com/ziiweb/website/67c067d7e73fa8fd110f5a20/d1569110caff062a60b7c702b09772f7.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
     <meta name="format-detection" content="telephone=no">
     <meta name="application-name" content="iWedding">
     <meta name="author" content="Biihappy.com">
@@ -32,6 +35,50 @@
 </script>
 
 <body>
+
+    
+    <style type="text/css">
+        @-webkit-keyframes biilogo-pulse {
+          from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+          }
+          50% {
+            -webkit-transform: scale3d(0.95, 0.95, 0.95);
+            transform: scale3d(0.95, 0.95, 0.95);
+          }
+          to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+          }
+        }
+        
+        @keyframes biilogo-pulse {
+          from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+          }
+          50% {
+            -webkit-transform: scale3d(0.95, 0.95, 0.95);
+            transform: scale3d(0.95, 0.95, 0.95);
+          }
+          to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+          }
+        }
+        .bii-player{position: fixed;bottom: 70px;left: 50px;width: 40px;height: 40px;z-index:99999;display:none;}
+        .bii-player .playerIcon{cursor:pointer;display: block;width:40px;height:40px;-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;background-color: #df4758;padding-top: 7px;padding-left: 9px;position:absolute;z-index: 2;}
+        .bii-player:after{content: "";position: absolute;-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;z-index: -1;background-color: rgba(242, 59, 67, 0.3);width: 120%;height: 120%;left: -10%;top: -10%;-webkit-animation: biilogo-pulse 1s infinite;animation: biilogo-pulse 1s infinite;z-index: 1;}
+        .bii-player img{width: 100%;z-index: 99999;position: absolute;cursor:pointer;}
+        .bii-player.show-sec .bii-player-secondary{visibility: visible;}
+        .bii-player.show-sec .bii-player-secondary-content{ transform: translate3d(0, 0, 0);}
+        .bii-player-secondary{position: absolute;width: 310px;left: 25px;height: 50px;overflow: hidden;visibility: hidden;}
+        .bii-player-secondary-content{display: flex;align-items: center;cursor:pointer;user-select: none;position: absolute;width: 310px;left: -25px;background: #fff;height: 40px;padding: 8px 11px 8px 50px;border: 1px solid #df4759;border-radius: 30px;z-index: 1;font-size:14px;transform: translate3d(-100%, 0, 0);transition: transform 175ms ease;font-family: arial;font-weight: 200;color: #000;}
+        @media (max-width: 799px) {
+          .bii-player{bottom: 30px;left: 20px;}
+        }
+    </style>
     <div class="preloader">
         <div class="lds-heart">
             <div></div>
@@ -408,7 +455,7 @@
                         <div class="gallery-item col-md-4">
                             <div class="mb-2 btn-see-more-gallery gallery-box" data-index="8">
                                 <div class="gallery-img">
-                                    <img src="./templates/AnhCuoi/2.jpg" />
+                                    <img src="./templates/AnhCuoi/4.jpg" />
                                 </div>
                                 <div class="gallery-detail">
                                     <h4 class="mb-0">Album hình cưới</h4>
@@ -624,14 +671,71 @@
                 }
                 let biicore = parseJsonRecursively('{"template_id":"60d9d51ad8eec60dc9382e37","templatePremium":false,"themeRoot":"https:\/\/duocbich.iwedding.info\/templates\/template1","webroot":"https:\/\/duocbich.iwedding.info","coreSite":"https:\/\/biihappy.com","webToken":"67c067d7e73fa8fd110f5a20","isPremium":false,"bgMusic":"https:\/\/cdn.biihappy.com\/ziiweb\/wedding-musics\/BeautifulInWhite-ShaneFilan-524801.mp3","alert":"[]","effect":"{\\\"type\\\":\\\"heart\\\"}","logo":"https:\/\/iwedding.info\/common\/imgs\/bii.png?v=20210131","url_landing_page":"https:\/\/biihappy.com\/iwedding","isAutoPlay":false,"footer_title":"iWedding | N\u1ec1n t\u1ea3ng t\u1ea1o website \u0111\u00e1m c\u01b0\u1edbi mi\u1ec5n ph\u00ed t\u1eeb Biihappy","footer_title_mobile":"T\u1ea1o website \u0111\u00e1m c\u01b0\u1edbi mi\u1ec5n ph\u00ed"}');
             </script> -->
-            <script src="https://duocbich.iwedding.info/common/biicommon.min.js?v=20241222"></script>
+            <!-- <script src="https://duocbich.iwedding.info/common/biicommon.min.js?v=20241222"></script> -->
+            <script type="text/javascript">
+                function sanitizeJsonString(jsonString) {
+                    return jsonString
+                        .replace(/[\n\r\t]/g, '')
+                        .replace(/,(\s*[}\]])/g, '$1');
+                }
+                function parseJsonRecursively(jsonString) {
+                    let sanitizedString = sanitizeJsonString(jsonString);
+                    let parsed = JSON.parse(sanitizedString);
+                    Object.keys(parsed).forEach(function (key) {
+                        try {
+                            let checkValue = JSON.parse(parsed[key]);
+                            if (checkValue && checkValue.constructor === Object) {
+                                parsed[key] = checkValue;
+                            }
+                        } catch (e) {
+    
+                        }
+                    });
+                    return parsed;
+                }
+                let biicore = parseJsonRecursively('{"template_id":"60d9d51ad8eec60dc9382e37","templatePremium":false,"themeRoot":"https:\/\/duocbich.iwedding.info\/templates\/template1","webroot":"https:\/\/duocbich.iwedding.info","coreSite":"https:\/\/biihappy.com","webToken":"67c067d7e73fa8fd110f5a20","isPremium":true,"bgMusic":"\/common\/imgs\/EmDongYDucPhuc.mp3","alert":"[]","effect":"{\\\"type\\\":\\\"heart\\\"}","logo":"https:\/\/iwedding.info\/common\/imgs\/bii.png?v=20210131","url_landing_page":"https:\/\/biihappy.com\/iwedding","isAutoPlay":false,"footer_title":"iWedding | N\u1ec1n t\u1ea3ng t\u1ea1o website \u0111\u00e1m c\u01b0\u1edbi mi\u1ec5n ph\u00ed t\u1eeb Biihappy","footer_title_mobile":"T\u1ea1o website \u0111\u00e1m c\u01b0\u1edbi mi\u1ec5n ph\u00ed"}');
+            </script>
+            <!-- <script src="https://duocbich.iwedding.info/common/biicommon.min.js?v=20241222"></script> -->
+            <script src="https://preview.iwedding.info/common/biicommon.min.js?v=20241222"></script>
+    
+
+
+
+            
         </div>
+
+        <div class="bii-player" style="display: block;">
+            <div onclick="playPause();" class="bii-player-secondary"><div class="bii-player-secondary-content">Click vào đây nếu bạn muốn phát nhạc!</div></div>
+            <div onclick="playPause();" class="playerIcon">
+                <span id="playerVolumeOff" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+                      <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"></path>
+                    </svg>
+                </span>
+                <span style="display: block;" id="playerVolumeOn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                      <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                      <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                      <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"></path>
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+
+        
+
+
+        
         <script src="https://duocbich.iwedding.info/common/calendar.js?v=20241222"></script>
         <script src="https://duocbich.iwedding.info/templates/template1/js/jquery-plugin-collection.js?v=20241222"></script>
         <script src="https://duocbich.iwedding.info/templates/template1/js/script.js?v=20241222"></script>
         <script src="https://duocbich.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js?v=20241222"></script>
         <script type="module" src="https://duocbich.iwedding.info/common/emoji-picker/js/init.js?v=20241222"></script>
+        <audio src="https://cdn.biihappy.com/ziiweb/wedding-musics/BeautifulInWhite-ShaneFilan-524801.mp3" controls="controls" loop="" style="display: none;"></audio>
     </div>
+    <script src="https://duocbich.iwedding.info/common/biicommon.min.js?v=20241222"></script>
+
 </body>
 
 </html>
